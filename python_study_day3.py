@@ -82,3 +82,21 @@ else:
     print("Sorry you have to grow taller before you can ride.")
 
 # 나이의 조건이 두가지가 아니라 3가지 일 때 elif를 사용할 수 있다. (if / elif / else)
+
+# 미니 프로젝트 해설이 포함됨 BMI 계산기
+
+weight = 85
+height = 1.85
+
+bmi = weight / (height ** 2)
+
+if bmi < 18.5:
+    print("underweight")
+elif 18.5 <= bmi < 25: 
+    print("normal weight")  
+else:
+    print("overweight")
+
+# 다중 연속 if 문
+
+
