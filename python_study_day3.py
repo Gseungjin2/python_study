@@ -196,7 +196,90 @@ print(f"Your fianl bill is {bill}")
 # 논리 연산자
 """
 Lofical Operators 
-A and B
-C ro D
-not E
+A and B A와 B 모두 참이여야 True가 되고 A와 B 둘중 하나만 틀려도 False가 된다.
+a = 12 
+a > 15 
+False
+a > 10
+True
+a > 10 and a < 13
+True
+a > 15 and a < 13
+False
+True and True
+True
+False and True
+False
+True and False
+False
+
+
+C ro D C,D 모두 참이거나 C,D 중 하나만 참이여도 모두 참이다. C,D 모두 거짓일 때만 거짓이다
+a = 12
+a > 10 or a < 10
+True
+True or True
+True
+True or False 반대여도 True 이다.
+True 
+False or False
+False
+
+not E 이 연산자는 기본적으로 조건을 반대로 출력한다. 조건이 거짓이면 참으로 출력
+not a < 0
+True
+not False
+Ture
+not True
+False
 """
+# 롤러코스터 and, or, not 연사자 추가
+
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+bill = 0
+
+if height >= 120:
+    print("You can ride the rollercoaster")
+    age = int(input("What is your age?"))
+    if age <= 12:
+        bill = 5
+        print("Child tickets are $5.")
+    elif age <= 18:
+        bill = 7
+        print("Youth tickets are $7.")
+    elif 45 <= age <= 55: #age >= 45 and age <= 55 이런씩으로 사용할 수도 있지만 더 쉽게 45 <= age <= 55 이런씩으로 사용가능하다다
+        print("Everything in going to be ok. Have a ferr ride on us!")
+    else:
+        bill = 12
+        print("Adult tickets are $12.")
+
+    wants_photo = input("Do you want to have a photo take? Type y for Yes and n for No.?")
+    if wants_photo == "y":
+        # Add $3 to their bill
+        bill += 3
+    
+    print(f"Your fianl bill is {bill}") 
+    """
+    이 print 문은 같은 간격으로 들여쓰기 X 실직적으로 if 문이 실행된 후에 발생한다. 
+    확인해보고 싶은면 print 문을 들여쓰기 해보라.
+    """
+else:
+    print("Sorry you have to grow taller before you can ride.")
+
+# 논리 연산자 퀴즈
+#다음 코드는 무엇을 출력하나요?
+
+a = 5
+b = 7
+ 
+if a >= b and a != b:
+    print("A")
+elif not a >= b and a != b:
+    print("B")
+else:
+    print("C")
+# 내가 생각 했을땐 and 연산자를 사용했으니 서로 비교 했을때 a >= b and a != b = false 이고
+# not a >= b and a != b = True 이기 때문에 print("B") 가 나올것이라도 생각했다. 두개의 조건문이 
+# C 가 나오는 조건의 위의 두개의 조건문이 모두 거짓일때 나온다 and 연산자는 두개의 조건문이 모두 참 
+# 일때만 true 이니까
