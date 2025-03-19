@@ -83,7 +83,7 @@
 
 # if height >= 120:
 #     print("You can ride the rollercoaster")
-#     age = int(input("What is your ahe?"))
+#     age = int(input("What is your age?"))
 #     if age <= 12:
 #         print("Please pay $5.")
 #     elif age <= 18:
@@ -246,7 +246,7 @@
 #     elif age <= 18:
 #         bill = 7
 #         print("Youth tickets are $7.")
-#     elif 45 <= age <= 55: #age >= 45 and age <= 55 이런씩으로 사용할 수도 있지만 더 쉽게 45 <= age <= 55 이런씩으로 사용가능하다다
+#     elif 45 <= age <= 55: #age >= 45 and age <= 55 이런씩으로 사용할 수도 있지만 더 쉽게 45 <= age <= 55 이런씩으로 사용가능하다
 #         print("Everything in going to be ok. Have a ferr ride on us!")
 #     else:
 #         bill = 12
