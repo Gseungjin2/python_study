@@ -85,23 +85,51 @@
 # status_of_america[1] = "Pencilvania" # 인덱스를 사용해서 이런씩으로 특정 내용을 수정할 수 있다.ㄴㄴ
 # print(status_of_america)
 
-# 금융가 룰렛 - 누가 계산해야 할까요? 미니 프젝
-import random
-friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
-Russian_Roulette = random.choice(friends)
-print(Russian_Roulette)
-# 강의 정답
-friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
+# # 금융가 룰렛 - 누가 계산해야 할까요? 미니 프젝
+# import random
+# friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
+# Russian_Roulette = random.choice(friends)
+# print(Russian_Roulette)
+# # 강의 정답
+# friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
 
-# 1 Option
-print(random.choice(friends))
+# # 1 Option
+# print(random.choice(friends))
 
-# 2nd Option
-random_index = random.randint(0, 4)
-print(friends[random_index])
+# # 2nd Option
+# random_index = random.randint(0, 4)
+# print(friends[random_index])
+
+# """
+# 1. 리스트에서 1개만 랜덤 추출하기
+# 리스트의 요소를 추출하는 함수는 choice 와 sample 이 있습니다. 두 가지가 차이점이 있겠죠? 
+# 먼저 choice는 리스트에서 한 가지 요소만 랜덤으로 추출하는 함수 입니다.
+# """
+
+# # IndexError 및 중첩 리스트 활용하기
+
+# status_of_america = ["Delaware", "Pennsylvania, New jersey", "Georgia"] # 50개의 주라고 했을때 
+
+# # print(len(status_of_america))
+
+# num_of_status = len(status_of_america) # 50 -> 49
+
+# # print(num_of_status)
+
+# print(status_of_america[num_of_status - 1]) # 이런씩으로 사용해야함
 
 """
-1. 리스트에서 1개만 랜덤 추출하기
-리스트의 요소를 추출하는 함수는 choice 와 sample 이 있습니다. 두 가지가 차이점이 있겠죠? 
-먼저 choice는 리스트에서 한 가지 요소만 랜덤으로 추출하는 함수 입니다.
+위 print문을 그냥 사용하면 리스트 인덱스 범위 초과 오류가 나옴 재대로 출력하긴 위해서 -1 필요
+"""
+# 중첩 리스트
+
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+
+dirty_doaen = [fruits, vegetables]
+print(dirty_doaen[1][1])
+
+"""
+kale 나오는 이유는 중첩 리스트 순차적으로 확인하고 첫번째 인데스도 확인하지만 건너뛰고 마지막 인덱스를 확인한뒤 마지막 
+인덱스인 kale 만 나오는걸 확인하였다다
 """
