@@ -68,7 +68,7 @@
 # else:
 #     print("Tails")
 
-# # 오프셋을 이해하고 리스트에 항목 추가하기
+# # 오프셋(대충 인데스로 이해하기기)을 이해하고 리스트에 항목 추가하기
 # """
 # 리스트는 데이터 구조이다(Data Structure)
 # 0은 맨앞 첫번째 -1은 맨끝에서 첫번째 -0은 없다
@@ -90,6 +90,7 @@
 # friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
 # Russian_Roulette = random.choice(friends)
 # print(Russian_Roulette)
+
 # # 강의 정답
 # friends = ["Alice", "Bob", "Charlie", "David", "Emanuel"]
 
@@ -118,18 +119,74 @@
 
 # print(status_of_america[num_of_status - 1]) # 이런씩으로 사용해야함
 
-"""
-위 print문을 그냥 사용하면 리스트 인덱스 범위 초과 오류가 나옴 재대로 출력하긴 위해서 -1 필요
-"""
-# 중첩 리스트
+# """
+# 위 print문을 그냥 사용하면 리스트 인덱스 범위 초과 오류가 나옴 재대로 출력하긴 위해서 -1 필요
+# """
+# # 중첩 리스트
 
-fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
-vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+# fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries", "Pears"]
+# vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
 
-dirty_doaen = [fruits, vegetables]
-print(dirty_doaen[1][1])
+# dirty_doaen = [fruits, vegetables]
+# print(dirty_doaen[1][1])
 
-"""
-kale 나오는 이유는 중첩 리스트 순차적으로 확인하고 첫번째 인데스도 확인하지만 건너뛰고 마지막 인덱스를 확인한뒤 마지막 
-인덱스인 kale 만 나오는걸 확인하였다다
-"""
+# """
+# kale 나오는 이유는 중첩 리스트 순차적으로 확인하고 첫번째 인데스도 확인하지만 건너뛰고 마지막 인덱스를 확인한뒤 마지막 
+# 인덱스인 kale 만 나오는걸 확인하였다다
+# """
+
+# 4일차 프로젝트: 가위바위보
+# 강의 영상 정답 
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+
+'''
+
+import random
+
+game_images = [rock, paper, scissors]
+
+user_choise = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+print(game_images[user_choise])
+
+Computer_chose = random.randint(0, 2)
+print("Computer chos")
+print(game_images[Computer_chose])
+
+if user_choise >= 3 or user_choise < 0:
+    print("You typed an invalid number. You lose!")
+elif user_choise == 0 and Computer_chose == 2:
+    print("You win!")
+elif Computer_chose == 0 and user_choise == 2:
+    print("You lose!")
+elif Computer_chose > user_choise:
+    print("You lose")
+elif user_choise > Computer_chose:
+    print("You win!")
+elif Computer_chose == user_choise:
+    print("It's a draw!")
