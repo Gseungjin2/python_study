@@ -41,3 +41,10 @@ for score in student_scores:
 print(sum)
 
 # max 를 이용해서 위에와 같이 코딩해 최대 값을 출력하라
+
+max_score = 0
+for score in student_scores:
+    if score > max_score:
+        max_score = score
+        
+print(max_score)
