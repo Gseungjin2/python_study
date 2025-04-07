@@ -71,14 +71,27 @@
 # 다른 숫자로 증가 시키고 싶다면 끝에 쉬표를 추가하고 스텝 크기를 지정해야 한다. 3으로 지정한다면 3 씩 증가하면서 숫자가 출력된다.
 # '''
 
-# 내가 쓴다다
-for number in range(1, 101, +1):
-    print(number)
+# # 내가 쓴다다
+# for number in range(1, 101, +1):
+#     print(number)
 
-# 강의 영상 답
+# # 강의 영상 답
 
 total = 0
 for number in range(1, 101):
     total += number
 
 print(total)
+
+
+# 강의 영상 미니 프로젝트(FizzBuzz)
+#내가 만든 코드 
+for number in range(1, 101):
+    if number % 3 == 0 and number % 5 == 0:
+        print("FizzBuzz")
+    elif number % 3 == 0:
+        print("Fizz")
+    elif number % 5 == 0:
+        print("Buzz")
+    else:
+        print(number)
