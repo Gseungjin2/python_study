@@ -3,14 +3,14 @@
 # Random 모듈
 # 의사난수 생성 수학이 많다 그리고 파이썬ㅇ이 사용하는 것은 메르센 트위스터(Mersenne Twister) 라고불리는 것이다.
 
-# import random
-# import my_module
+import random
+import my_module
 
 # random_integer = random.randint(1, 10)
-# print(random_integer)
+print(random_integer)
 
 # #모듈 만들고 쓰는법 동작 방식식
-# print(my_module.my_favourite_number)
+print(my_module.my_favourite_number)
 
 # Module 이란 
 """
@@ -28,13 +28,13 @@
 않고도 임의 숫자를 쉽게 생성할 수 있도록 파이썬에서 만드 모듈이다.
 """
 
-# import random
+import random
 
-# random_number_0_to_1 = random.random() * 10
-# print(random_number_0_to_1)
+random_number_0_to_1 = random.random() * 10
+print(random_number_0_to_1)
 
-# random_float = random.uniform(1, 10)
-# print(random_float)
+random_float = random.uniform(1, 10)
+print(random_float)
 
 
 
