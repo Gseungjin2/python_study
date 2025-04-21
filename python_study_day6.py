@@ -41,3 +41,49 @@ def my_function():
 함수를 완성 하고 나서 프로그래밍 용어로는 함수를 호출(Calling)한다고 한다.
 함수를 호출하려면 무조건 함수의 이름과 괄호를 지정하면 된다.
 '''
+
+#로봇을 움직여 작은 직사각형 만들기
+# def turn_around():
+#     turn_left()
+#     turn_left()
+    
+# def turn_right():
+#     turn_left()
+#     turn_left()
+#     turn_left()
+
+# turn_left()
+# move()
+# turn_right()
+# move()
+# turn_right()
+# move()
+# turn_right()
+# move()
+
+
+#반복문으로 장애물 넘기
+#반복문 중요 많이 쓰이기 때문에 복습 꼭하기
+# def turn_around():
+#     turn_left()
+#     turn_left()
+    
+# def turn_right():
+#     turn_left()
+#     turn_left()
+#     turn_left()
+
+# def jump():
+#     move()
+#     turn_left()
+#     move()
+#     turn_right()
+#     move()
+#     turn_right()
+#     move()
+#     turn_left()
+    
+# for step in range(6):
+#     jump()
+
+# 파이썬에서의 들여쓰기
