@@ -87,3 +87,48 @@ def my_function():
 #     jump()
 
 # 파이썬에서의 들여쓰기
+''''
+들여쓰기 공백에 대한 중요성 대한 이야기
+동인한 파일에서 탭과 공백을 혼합하여 들여쓰기에 사용할 수 없다. 파이썬 3부터는.. 이게 맞누?
+파이썬 공식 페이지를 가서 PEP 8 -- style Guide 꼭 보기를 추천한다..
+'''
+
+# while 반복문
+'''
+while loops = 특정 조건이 참일 경우 명령이 게속 실해되는 반복문
+'''
+
+# For 
+
+# for item in list_of _iems:
+#     #Do something to each item
+
+# for number in range(a, b):
+#     print(number)
+
+#While
+
+# while something_is_true
+#     #Do something repeatedly
+
+# wheile 사용한 로봇 게임
+# def turn_right():
+#     turn_left()
+#     turn_left()
+#     turn_left()
+    
+# def jump():
+#     move()
+#     turn_left()
+#     move()
+#     turn_right()
+#     move()
+#     turn_right()
+#     move()
+#     turn_left()
+    
+# number_of_hurdles = 6
+# while number_of_hurdles > 0:
+#     jump()
+#     number_of_hurdles -= 1
+#     print(number_of_hurdles)
