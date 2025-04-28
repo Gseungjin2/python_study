@@ -132,3 +132,80 @@ while loops = 특정 조건이 참일 경우 명령이 게속 실해되는 반�
 #     jump()
 #     number_of_hurdles -= 1
 #     print(number_of_hurdles)
+
+#while 사용방식
+# while something_is_true:
+    #Do this
+    #Then do this
+    #Them do this
+
+# number_of_hurdles = 6
+# while number_of_hurdles > 0: # while something_is_true: 이 부분과 같다
+#     jump() 
+#     number_of_hurdles -= 1
+#     print(number_of_hurdles)
+
+# reeborg 허들 경주(while를 사용해서 만들기기)
+# def turn_right():
+#      turn_left()
+#      turn_left()
+#      turn_left()
+    
+# def jump():
+#      move()
+#      turn_left()
+#      move()
+#      turn_right()
+#      move()
+#      turn_right()
+#      move()
+#      turn_left()
+    
+# #number_of_hurdles = 6
+# while number_of_hurdles > 0:
+#    jump()
+#    number_of_hurdles -= 1
+#    print(number_of_hurdles)
+    
+# while not at_goal():
+#     jump()
+#     if at_goal(): 
+#         break
+'''
+허들 경주
+리보그가 허들 경주에 참가했지만, 경주 시간이 얼마나 될지 미리 알지 못합니다. 표시된 경로와 비슷한 경로를 따라 달리되, 경주가 시작된 후 표시되는 유일한 깃발에서 멈추도록 하세요.
+당신이 알아야 할 것
+기능 move()과 turn_left().
+조건 at_goal()과 그 부정.
+루프 를 사용하는 방법 while.
+귀하의 프로그램은 세계 허들 1 에도 유효해야 합니다 .
+'''
+'''
+for 반목분도 배우고 while 반복문도 배웠는데
+둘을 모두 사용할 수 있다면 왜 어느 한쪽을 선택해야 하지?
+for 반복문과 while 반복문은 각각 언제 사용해야 할까?
+= for 반복문의 경우 어떤 것을 반복하고 반복하는 각 아이템에 대해 뭔가를 해야 할 때 유용하다.
+예를 들자면 어떤 리스트를 반복하는데 '과일들'이라는 리스트에 있는 각 과일에 대해 뭔가를 하길 원하죠 거죠
+여기 있는 아이템들에 대해서.. 간다한 반복문을 출력해야 하는 경우 for 반복문을 써야 한다
+fruits = ["Apple", "Pear", "Orange"]
+for fruit in fruits:
+    print(fruit)
+이런 경우 간단한 리스트를 반복할때 이럴때 while 반복문을 사용하면 이 작업은 쉽지 않다.
+수열 함수도 있기 때문에..(range)함수를 말한다 (1 ~ 6의 범위 안의 각 번호를 호출하는 식으로로)
+for 문과 range 같이 사용하기 편함!
+
+한편 while 반목문의 경우 전체 순서에서 몇번째에 해당하는지 어떤 아이템을 반복하지가 아닌, 그저 특정 작업을
+설정한 조건에 도달할 때까지 수없이 반복 수행하고자 할 때 많이 사용한다.
+
+참고로 while 반복문은 for 반복문에 비해 약간의 위험성이 있다, 왜냐하면 for 반복문은 실행 횟수를
+사전에 설정해두기 떼문에 이 경우에는 리스트가 끝나면 실행이 중단되고 이 경우의 범위의 상한선에 이르면
+중단 되지만 while 반복문의 경우 특정 조건이 거짓으로 전환될 때까지 계속 실행되기 때문에 만약 조건이 
+거짓이 되지 않는다면 소위 무한 반복이라 불리는 반복문이 된다.
+예를 들면 
+while 5 > 3:
+    #do this
+    #Then do this
+    #Then do this
+5가 3보다 크다는 것은 영원한 진리이기 때문에 이코드 또한 영원히 실행된다는 의미가 된다.
+이경우 printf를 사용해서 디버깅을 꼭 해보는게 아주 중요하다!!!**
+''' 
