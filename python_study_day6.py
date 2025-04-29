@@ -209,3 +209,54 @@ while 5 > 3:
 5가 3보다 크다는 것은 영원한 진리이기 때문에 이코드 또한 영원히 실행된다는 의미가 된다.
 이경우 printf를 사용해서 디버깅을 꼭 해보는게 아주 중요하다!!!**
 ''' 
+
+# while 반복문을 사용한 장애물 넘기
+'''
+허들 경주
+리보그가 허들 경주에 참가했습니다. 표시된 경로를 따라 코스를 달리게 하세요.
+
+이 세계를 다시 로드할 때마다 허들의 위치와 개수가 변경됩니다.
+당신이 알아야 할 것
+기능 move()과 turn_left().
+조건 front_is_clear()또는 wall_in_front(), at_goal(), 그리고 그 부정.
+while루프와 명령문을 사용하는 방법 if.
+귀하의 프로그램은 세계 허들 1 과 허들 2 에도 유효해야 합니다 
+
+front_is_clear() = 앞이 비어 있거나 
+wall_in_front() = 앞에 벽에 있거나
+at_goal() = 목표에 도달한 경우와 그 부정문인 앞이 비어 있지 않은 경우, 앞에 벽이 있지 않은 경우
+목적지가 아닌 경우 이전에 배운 not과 while 반복문을 사용해서 문제를 풀어보자!
+
+허들 넘기 정답
+def turn_right():
+     turn_left()
+     turn_left()
+     turn_left()
+    
+def jump():
+#    move()
+     turn_left()
+     move()
+     turn_right()
+     move()
+     turn_right()
+     move()
+     turn_left()
+    
+#number_of_hurdles = 6
+#while number_of_hurdles > 0:
+#    jump()
+#    number_of_hurdles -= 1
+#    print(number_of_hurdles)
+    
+#while not at_goal():
+#    jump()
+#    if at_goal(): 
+#        break
+
+while not at_goal():
+    if wall_in_front():
+        jump()
+    else:
+        move()
+'''
