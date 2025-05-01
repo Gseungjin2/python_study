@@ -260,3 +260,61 @@ while not at_goal():
     else:
         move()
 '''
+
+'''
+다양한 높이의 장애물 넘기
+
+허들 레이스
+리보그가 허들 경주에 참가했습니다. 리보그가 표시된 경로를 따라 코스를 달리게 하세요.
+
+이 세계가 새로고침될 때마다 허들의 위치, 높이, 개수가 바뀝니다.
+알아야 할 사항
+월드 어라운드 4와 허들 3에 유효한 프로그램을 작성할 수 있어야 하며, 이 마지막 허들 레이스에 결합할 수 있어야 합니다.
+
+프로그램은 허들 1, 허들 2 및 허들 3 월드에서도 유효해야 합니다.
+
+24줄 이상 최대한 넘기지 않고 해결해보자
+
+내가 만들 코드 성공함! 기쁘다
+def turn_right():
+     turn_left()
+     turn_left()
+     turn_left()
+    
+def jump():
+     turn_right()
+     move()
+     turn_right()
+     move()
+    
+while not at_goal():
+    if right_is_clear():
+        jump()
+    elif front_is_clear():
+        move()
+    elif wall_on_right():
+        turn_left()
+
+강의 영상의 최종 답안 코드
+def turn_right():
+     turn_left()
+     turn_left()
+     turn_left()
+
+def jump():
+    turn_left()
+    while wall_on_right():
+        move()
+    turn_right()
+    move()
+    turn_right()
+    while front_is_clear():
+        move()
+    trun_left()
+
+while not at_goal():
+    if wall_in_front():
+        jump()
+    else:
+        move()
+'''
