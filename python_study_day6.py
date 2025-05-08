@@ -318,3 +318,49 @@ while not at_goal():
     else:
         move()
 '''
+
+'''
+최종 프로젝트: 미로 탈출
+
+미로에서 길을 잃다
+리보그는 어두운 미로를 탐험하던 중 손전등의 배터리가 다 떨어졌습니다.
+
+리보그가 출구를 찾을 수 있도록 if/elif/else 문을 사용하여 프로그램을 작성하세요. 비결은 리보그가 미로의 오른쪽 가장자리를 따라가면서 우회전할 수 있으면 우회전하고, 우회전할 수 없으면 직진하거나 최후의 수단으로 좌회전하도록 하는 것입니다.
+
+알아두어야 할 사항
+함수 move() 및 turn_left().
+front_is_clear() 또는 wall_in_front(), right_is_clear() 또는 wall_on_right(), at_goal()을 테스트합니다.
+while 루프와 if/elif/else 문을 사용하는 방법.
+테스트의 네거티브를 사용하는 방법을 아는 것도 유용할 수 있습니다(파이썬에서는 사용되지 않음).
+
+front_is_clear() = 앞에 벽이이 없다면
+wall_in_front() = 앞에 벽이 있다면
+
+wall_on_right() = 오른쪽에 벽이 있다면
+right_is_clear() = 오른쪽에 벽이 없다면
+
+at_goal() = 골 
+플래그가 오르쪽이 고정 되어있기 때문에 이동을 최대한 우회전전으로 로봇을 이동시키는 코드를 구성하고 
+우회전 할 수없다면 직진 최호의 수단으로 좌회전 할 수있게 코드를 만들자자
+
+영상 속 정답
+def turn_right():
+     turn_left()
+     turn_left()
+     turn_left()
+    
+while not at_goal():
+    if right_is_clear():
+        turn_right()
+        move()
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()
+        
+5일간 도전 했지만 실패... 열 받는다
+
+리봇그 미로 시작이 특정 구역에서 시작하면 무한 루프에 빠지는 경우가 생김 이건 중급 디버깅을
+통해서 해결 할 수 있기때문에 아직 초보자나 파이썬 이해하는 단계에 있다면 15강의 까지 마친후에
+도전하는것을 권장..
+'''
