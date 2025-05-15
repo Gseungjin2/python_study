@@ -3,10 +3,12 @@ import random
 
 chosen_word = random.choice(word_list)
 print(chosen_word)
-user_choice = input(str("Guess a letter:"))
+guess = input("Guess a letter:").lower()
+print(guess)
 
-for user_choice_letter in chosen_word:
-    if user_choice_letter == user_choice:
+for letter in chosen_word:
+    if letter == guess:
         print("Right")
     else:
         print("Wrong")
+
