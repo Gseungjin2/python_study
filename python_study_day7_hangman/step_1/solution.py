@@ -2,13 +2,18 @@ from main import word_list
 import random
 
 chosen_word = random.choice(word_list)
+
 print(chosen_word)
+
+dispay_holder = '_' * len(chosen_word) 
+
+print(dispay_holder)
+
 guess = input("Guess a letter:").lower()
-print(guess)
 
 for letter in chosen_word:
     if letter == guess:
-        print("Right")
-    else:
-        print("Wrong")
+        
+           
 
+print(dispay_holder)
