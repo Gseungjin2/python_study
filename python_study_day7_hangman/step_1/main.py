@@ -14,9 +14,13 @@ TOOD-3 - ChecK if the letter the user guessd (Guess) is one of the letters in th
 '''
 
 '''
-2일차
+도전과제 2일차 빈칸을 맞춘 글자로 바꾸기
+'''
 
-TOOD-1: Create a "placeholder" with same numver of blanks as the chosen_word 
+'''
+도전과제 3일차 플레이어가 이겼는지 확인하기
 
-Create a "display" that puts the guess letter in the ring
+TOOD-1 - Use a while loop to let the user guess again.
+
+
 '''
