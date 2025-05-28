@@ -21,6 +21,8 @@ TOOD-3 - ChecK if the letter the user guessd (Guess) is one of the letters in th
 도전과제 3일차 플레이어가 이겼는지 확인하기
 
 TOOD-1 - Use a while loop to let the user guess again.
+'''
 
-
+'''
+도전과제 4일차 영상 시청
 '''
